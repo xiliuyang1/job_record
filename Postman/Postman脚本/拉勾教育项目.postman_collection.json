@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "5448ff97-eec7-4bbb-ba0b-e5bfa435ae7c",
+		"name": "拉勾教育项目",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "登陆成功（断言演示）",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// 断言响应状态码是不是200\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// 断言响应数据中，响应体是否包含手机号码15321919666\r",
+							"pm.test(\"响应体是否包含手机号码15321919666\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"15321919666\");\r",
+							"});// pm.response.text() 获取文本格式的响应体\r",
+							"\r",
+							"// 断言拉勾教育登陆接口中，id的值是不是10030011\r",
+							"pm.test(\"断言拉勾教育登陆接口中，id的值是不是10030011\", function () {\r",
+							"    var aaa = pm.response.json();\r",
+							"    pm.expect(aaa.content.user.id).to.eql(100030011);\r",
+							"});\r",
+							"\r",
+							"// 断言响应体：断言填写的预期的响应体，与实际的返回的响应体是否一致\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body({\r",
+							"    \"success\": true,\r",
+							"    \"state\": 1,\r",
+							"    \"message\": \"响应成功\",\r",
+							"    \"content\": {\r",
+							"        \"access_token\": \"7db00cab-1d21-4f3c-839c-2dc4075b94ce\",\r",
+							"        \"user_id\": 100030011,\r",
+							"        \"user\": {\r",
+							"            \"id\": 100030011,\r",
+							"            \"name\": \"15321919666\",\r",
+							"            \"portrait\": \"https://edu-lagou.oss-cn-beijing.aliyuncs.com/images/2020/06/28/15933251448762927.png\",\r",
+							"            \"phone\": \"15321919666\",\r",
+							"            \"password\": \"123456\",\r",
+							"            \"reg_ip\": null,\r",
+							"            \"account_non_expired\": null,\r",
+							"            \"credentials_non_expired\": null,\r",
+							"            \"account_non_locked\": null,\r",
+							"            \"status\": \"ENABLE\",\r",
+							"            \"is_del\": null,\r",
+							"            \"createTime\": 1594347555000,\r",
+							"            \"updateTime\": 1594347555000\r",
+							"        }\r",
+							"    }\r",
+							"});\r",
+							"});\r",
+							"\r",
+							"// 断言响应头\r",
+							"pm.test(\"Server is present\", function () {\r",
+							"    pm.response.to.have.header(\"Server\",\"Apache-Coyote/1.1\");\r",
+							"});\r",
+							"\r",
+							"// 断言响应时间不超过300毫秒\r",
+							"pm.test(\"Response time is less than 300ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+							"});\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/ssm_web/user/login?phone=15321919666&password=123456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"ssm_web",
+						"user",
+						"login"
+					],
+					"query": [
+						{
+							"key": "phone",
+							"value": "15321919666"
+						},
+						{
+							"key": "password",
+							"value": "123456"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "mobile",
+			"value": "15321919666"
+		}
+	]
+}

@@ -1,0 +1,1 @@
+CreateObject("Wscript.Shell").Run "cmd /c setup.bat",0,True

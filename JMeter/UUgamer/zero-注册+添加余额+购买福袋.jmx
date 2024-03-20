@@ -1,0 +1,1183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="zeroskins" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="记录备注" enabled="true">
+        <collectionProp name="UserParameters.names">
+          <stringProp name="787758568">批量汰换</stringProp>
+        </collectionProp>
+        <collectionProp name="UserParameters.thread_values">
+          <collectionProp name="-1767804074">
+            <stringProp name="-1522276465">1000件饰品进行汰换，/v1/displace/history-item接口dev响应时间 48s</stringProp>
+          </collectionProp>
+        </collectionProp>
+        <boolProp name="UserParameters.per_iteration">false</boolProp>
+      </UserParameters>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="手机号注册" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP信息头管理器" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="Content-Type" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Cookie</stringProp>
+              <stringProp name="Header.value">_x_auth_id=1225234069928988672; _x_auth_key=fX0kqK%2FuuYRbeCODAeqtQey1d0TB%2Bzz7fPxUMcTndwOKNlZdwpI5Udpv2Wy%2B5eJO</stringProp>
+            </elementProp>
+          </collectionProp>
+          <stringProp name="TestPlan.comments">${__P(token,)}</stringProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="手机号注册" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="from_activity" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">from_activity</stringProp>
+              </elementProp>
+              <elementProp name="mobile_code" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">244</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">mobile_code</stringProp>
+              </elementProp>
+              <elementProp name="mobile" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">18838033001</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">mobile</stringProp>
+              </elementProp>
+              <elementProp name="password" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">qq111111</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">password</stringProp>
+              </elementProp>
+              <elementProp name="code" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">616668</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">code</stringProp>
+              </elementProp>
+              <elementProp name="sk_share" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">sk_share</stringProp>
+              </elementProp>
+              <elementProp name="short_code" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">short_code</stringProp>
+              </elementProp>
+              <elementProp name="bd_vid" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">bd_vid</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">dev.zeroskins.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"> http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/sso/phone/signup?lang=zh-CN</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">http://dev.zeroskins.com/api/sso/phone/signup</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 数据文件设置" enabled="false">
+            <stringProp name="filename">C:/Users/c5/Desktop/learning/JMeter/UUgamer/手机账号-zero登录.txt</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames">phone</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <stringProp name="delimiter"></stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">false</boolProp>
+            <boolProp name="stopThread">true</boolProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON提取器" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">auth_key</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.data.auth_key</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON断言" enabled="true">
+            <stringProp name="JSON_PATH"></stringProp>
+            <stringProp name="EXPECTED_VALUE"></stringProp>
+            <boolProp name="JSONVALIDATION">false</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+            <boolProp name="ISREGEX">true</boolProp>
+          </JSONPathAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="手机号登录" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="source" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">1</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">source</stringProp>
+              </elementProp>
+              <elementProp name="ime" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">18821095c7766fa7129276da7663a5cf</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">ime</stringProp>
+              </elementProp>
+              <elementProp name="channel" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">channel</stringProp>
+              </elementProp>
+              <elementProp name="code" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">8888</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">code</stringProp>
+              </elementProp>
+              <elementProp name="mobile" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${phone}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">mobile</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">dev.uugamer.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/user/phone/login</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 数据文件设置" enabled="true">
+            <stringProp name="filename">C:/Users/c5/Desktop/优优GAME/JMeter/UUgamer/手机账号.txt</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames">phone</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <stringProp name="delimiter"></stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">false</boolProp>
+            <boolProp name="stopThread">true</boolProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON提取器" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">token</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.data.token</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP信息头管理器" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded;charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Lang" elementType="Header">
+                <stringProp name="Header.name">Lang</stringProp>
+                <stringProp name="Header.value">zh-CN</stringProp>
+              </elementProp>
+            </collectionProp>
+            <stringProp name="TestPlan.comments">${__P(token,)}</stringProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="购买福袋" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="card_no" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${card_num}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">card_no</stringProp>
+              </elementProp>
+              <elementProp name="num" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">num</stringProp>
+              </elementProp>
+              <elementProp name="room_id" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">1224550621179211776</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">room_id</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">dev.zeroskins.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/grabcard/api/game/buyCard</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">http://?lang=zh-CN</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP信息头管理器" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded;charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">X-Auth-Key</stringProp>
+                <stringProp name="Header.value">${auth_key}</stringProp>
+              </elementProp>
+              <elementProp name="Lang" elementType="Header">
+                <stringProp name="Header.name">Lang</stringProp>
+                <stringProp name="Header.value">zh-CN</stringProp>
+              </elementProp>
+            </collectionProp>
+            <stringProp name="TestPlan.comments">${__P(token,)}</stringProp>
+          </HeaderManager>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 数据文件设置" enabled="true">
+            <stringProp name="filename">C:/Users/c5/Desktop/learning/JMeter/UUgamer/福袋编号.txt</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames">card_num</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <stringProp name="delimiter"></stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">false</boolProp>
+            <boolProp name="stopThread">true</boolProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="手机号登录" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="手机号登录" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="username" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${phone}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">username</stringProp>
+              </elementProp>
+              <elementProp name="password" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">qq111111</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">password</stringProp>
+              </elementProp>
+              <elementProp name="mobile_code" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">244</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">mobile_code</stringProp>
+              </elementProp>
+              <elementProp name="remember" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">1</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">remember</stringProp>
+              </elementProp>
+              <elementProp name="lang" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">zh-CN</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">lang</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">dev.zeroskins.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/sso/user/login</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 数据文件设置" enabled="true">
+            <stringProp name="filename">C:/Users/c5/Desktop/learning/JMeter/UUgamer/手机账号-zero登录.txt</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames">phone</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <stringProp name="delimiter"></stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">false</boolProp>
+            <boolProp name="stopThread">true</boolProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON提取器-token" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">auth_key</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.data.auth_key</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP信息头管理器" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+              </elementProp>
+            </collectionProp>
+            <stringProp name="TestPlan.comments">${__P(token,)}</stringProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell 后置处理程序" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters">${auth_key}</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">${__setProperty(auth_key,${auth_key},)}</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="福袋抢卡" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="购买福袋" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="card_no" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">card_no</stringProp>
+              </elementProp>
+              <elementProp name="num" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">1</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">num</stringProp>
+              </elementProp>
+              <elementProp name="room_id" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">1227392136248541184</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">room_id</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">dev.zeroskins.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/grabcard/game/buyCard</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">rc.zeroskins.com/api/grabcard/game/index?is_user_join=0&amp;lang=zh-CN
+请求方法:
+GET</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 数据文件设置" enabled="false">
+            <stringProp name="filename">C:/Users/c5/Desktop/learning/JMeter/UUgamer/福袋编号.txt</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames">card_num1,card_num2</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <stringProp name="delimiter"></stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">false</boolProp>
+            <boolProp name="stopThread">true</boolProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="同步定时器" enabled="false">
+            <intProp name="groupSize">10</intProp>
+            <longProp name="timeoutInMs">50000</longProp>
+          </SyncTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="响应断言" enabled="false">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP信息头管理器" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">X-Auth-Key</stringProp>
+                <stringProp name="Header.value">${auth_key}</stringProp>
+              </elementProp>
+            </collectionProp>
+            <stringProp name="TestPlan.comments">${__P(token,)}</stringProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="刷新首页创建房间" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="is_user_join" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">is_user_join</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">rc.zeroskins.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/grabcard/game/index?lang=zh-CN</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">http://dev.zeroskins.com</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP信息头管理器" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">X-Auth-Key</stringProp>
+                <stringProp name="Header.value">${auth_key}</stringProp>
+              </elementProp>
+            </collectionProp>
+            <stringProp name="TestPlan.comments">${__P(token,)}</stringProp>
+          </HeaderManager>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 数据文件设置" enabled="false">
+            <stringProp name="filename">C:/Users/c5/Desktop/learning/JMeter/UUgamer/福袋编号.txt</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames">card_num1,card_num2</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <stringProp name="delimiter"></stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">false</boolProp>
+            <boolProp name="stopThread">true</boolProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="同步定时器" enabled="true">
+            <intProp name="groupSize">10</intProp>
+            <longProp name="timeoutInMs">50000</longProp>
+          </SyncTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="响应断言" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="福袋抢卡创建库存饰品" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="create_user_id" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${create_user_id}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">create_user_id</stringProp>
+              </elementProp>
+              <elementProp name="event" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${event}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">event</stringProp>
+              </elementProp>
+              <elementProp name="status" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${status}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">status</stringProp>
+              </elementProp>
+              <elementProp name="goods_info" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${goods_info}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">goods_info</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">dev.zeroskins.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/steam/v1/inventory/create/</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 数据文件设置" enabled="false">
+            <stringProp name="filename">C:/Users/c5/Desktop/create_datas.txt</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames">create_user_id,event,status,goods_info</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <stringProp name="delimiter"></stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">false</boolProp>
+            <boolProp name="stopThread">true</boolProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="同步定时器" enabled="false">
+            <intProp name="groupSize">1</intProp>
+            <longProp name="timeoutInMs">50000</longProp>
+          </SyncTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="响应断言" enabled="false">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP信息头管理器" enabled="false">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+              </elementProp>
+              <elementProp name="X-Auth-Key" elementType="Header">
+                <stringProp name="Header.name">X-Auth-Key</stringProp>
+                <stringProp name="Header.value">2cf1fb7132ab11567a1d1f0c26b2cf4811cf489f</stringProp>
+              </elementProp>
+            </collectionProp>
+            <stringProp name="TestPlan.comments">${__P(token,)}</stringProp>
+          </HeaderManager>
+          <hashTree/>
+          <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="用户参数" enabled="false">
+            <collectionProp name="UserParameters.names">
+              <stringProp name="96891546">event</stringProp>
+              <stringProp name="-892481550">status</stringProp>
+              <stringProp name="292793335">goods_info</stringProp>
+              <stringProp name="-1225950772">create_user_id</stringProp>
+            </collectionProp>
+            <collectionProp name="UserParameters.thread_values">
+              <collectionProp name="-315798912">
+                <stringProp name="1108107353">GRABCARD_WIN</stringProp>
+                <stringProp name="48">0</stringProp>
+                <stringProp name="190454828">[{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277978337501184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679011&quot;}]</stringProp>
+                <stringProp name="48">0</stringProp>
+              </collectionProp>
+              <collectionProp name="1362495495">
+                <stringProp name="1108107353">GRABCARD_WIN</stringProp>
+                <stringProp name="48">0</stringProp>
+                <stringProp name="-1156463783">[{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277978337501184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679900&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679917&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679901&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679918&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679902&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679919&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679903&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679920&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679904&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679921&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679905&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679922&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679906&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679923&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679907&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679924&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679908&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679925&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679909&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679926&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679910&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679927&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679911&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679928&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679912&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679929&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679913&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679930&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679914&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679931&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679915&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679932&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679915&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679933&quot;}]</stringProp>
+                <stringProp name="48">0</stringProp>
+              </collectionProp>
+              <collectionProp name="1362495495">
+                <stringProp name="1108107353">GRABCARD_WIN</stringProp>
+                <stringProp name="48">0</stringProp>
+                <stringProp name="-1156463783">[{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277978337501184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679900&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679917&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679901&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679918&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679902&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679919&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679903&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679920&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679904&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679921&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679905&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679922&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679906&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679923&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679907&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679924&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679908&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679925&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679909&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679926&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679910&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679927&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679911&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679928&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679912&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679929&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679913&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679930&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679914&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679931&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679915&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679932&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679915&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679933&quot;}]</stringProp>
+                <stringProp name="48">0</stringProp>
+              </collectionProp>
+              <collectionProp name="1362495495">
+                <stringProp name="1108107353">GRABCARD_WIN</stringProp>
+                <stringProp name="48">0</stringProp>
+                <stringProp name="-1156463783">[{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277978337501184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679900&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679917&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679901&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679918&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679902&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679919&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679903&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679920&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679904&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679921&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679905&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679922&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679906&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679923&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679907&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679924&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679908&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679925&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679909&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679926&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679910&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679927&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679911&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679928&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679912&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679929&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679913&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679930&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679914&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679931&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679915&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679932&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679915&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679933&quot;}]</stringProp>
+                <stringProp name="48">0</stringProp>
+              </collectionProp>
+            </collectionProp>
+            <boolProp name="UserParameters.per_iteration">false</boolProp>
+          </UserParameters>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="福袋抢卡创建库存饰品" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="create_user_id" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">create_user_id</stringProp>
+              </elementProp>
+              <elementProp name="event" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">GRABCARD_WIN</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">event</stringProp>
+              </elementProp>
+              <elementProp name="status" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">0</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">status</stringProp>
+              </elementProp>
+              <elementProp name="goods_info" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">[{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277978337501184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679900&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679917&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679901&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679918&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679902&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679919&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679903&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679920&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679904&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679921&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679905&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679922&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679906&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679923&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679907&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679924&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679908&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679925&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679909&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679926&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679910&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679927&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679911&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679928&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679912&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679929&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679913&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679930&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679914&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679931&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679915&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679932&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679916&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679933&quot;}]</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">goods_info</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">dev.zeroskins.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/steam/v1/inventory/create/</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 数据文件设置" enabled="false">
+            <stringProp name="filename">C:/Users/c5/Desktop/create_datas.txt</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames">create_user_id,event,status,goods_info</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <stringProp name="delimiter"></stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">false</boolProp>
+            <boolProp name="stopThread">true</boolProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="同步定时器" enabled="false">
+            <intProp name="groupSize">1</intProp>
+            <longProp name="timeoutInMs">50000</longProp>
+          </SyncTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="响应断言" enabled="false">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP信息头管理器" enabled="false">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+              </elementProp>
+              <elementProp name="X-Auth-Key" elementType="Header">
+                <stringProp name="Header.name">X-Auth-Key</stringProp>
+                <stringProp name="Header.value">2cf1fb7132ab11567a1d1f0c26b2cf4811cf489f</stringProp>
+              </elementProp>
+            </collectionProp>
+            <stringProp name="TestPlan.comments">${__P(token,)}</stringProp>
+          </HeaderManager>
+          <hashTree/>
+          <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="用户参数" enabled="false">
+            <collectionProp name="UserParameters.names">
+              <stringProp name="96891546">event</stringProp>
+              <stringProp name="-892481550">status</stringProp>
+              <stringProp name="292793335">goods_info</stringProp>
+              <stringProp name="-1225950772">create_user_id</stringProp>
+            </collectionProp>
+            <collectionProp name="UserParameters.thread_values">
+              <collectionProp name="-315798912">
+                <stringProp name="1108107353">GRABCARD_WIN</stringProp>
+                <stringProp name="48">0</stringProp>
+                <stringProp name="190454828">[{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277978337501184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679011&quot;}]</stringProp>
+                <stringProp name="48">0</stringProp>
+              </collectionProp>
+              <collectionProp name="1362495495">
+                <stringProp name="1108107353">GRABCARD_WIN</stringProp>
+                <stringProp name="48">0</stringProp>
+                <stringProp name="-1156463783">[{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277978337501184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679900&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679917&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679901&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679918&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679902&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679919&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679903&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679920&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679904&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679921&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679905&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679922&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679906&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679923&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679907&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679924&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679908&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679925&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679909&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679926&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679910&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679927&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679911&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679928&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679912&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679929&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679913&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679930&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679914&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679931&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679915&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679932&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679915&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679933&quot;}]</stringProp>
+                <stringProp name="48">0</stringProp>
+              </collectionProp>
+              <collectionProp name="1362495495">
+                <stringProp name="1108107353">GRABCARD_WIN</stringProp>
+                <stringProp name="48">0</stringProp>
+                <stringProp name="-1156463783">[{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277978337501184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679900&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679917&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679901&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679918&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679902&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679919&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679903&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679920&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679904&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679921&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679905&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679922&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679906&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679923&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679907&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679924&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679908&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679925&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679909&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679926&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679910&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679927&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679911&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679928&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679912&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679929&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679913&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679930&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679914&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679931&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679915&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679932&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679915&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679933&quot;}]</stringProp>
+                <stringProp name="48">0</stringProp>
+              </collectionProp>
+              <collectionProp name="1362495495">
+                <stringProp name="1108107353">GRABCARD_WIN</stringProp>
+                <stringProp name="48">0</stringProp>
+                <stringProp name="-1156463783">[{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277978337501184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679900&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679917&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679901&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679918&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679902&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679919&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679903&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679920&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679904&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679921&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679905&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679922&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679906&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679923&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679907&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679924&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679908&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679925&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679909&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679926&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679910&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679927&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679911&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679928&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679912&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679929&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679913&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679930&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679914&quot;},{&quot;user_id&quot;:&quot;942604117737824256&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679931&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679915&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277247769436160&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679932&quot;},{&quot;user_id&quot;:&quot;1225904257922691072&quot;,&quot;goods_id&quot;:&quot;684277680017629184&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679915&quot;},{&quot;user_id&quot;:&quot;1001255931532668928&quot;,&quot;goods_id&quot;:&quot;684277263825231872&quot;,&quot;appid&quot;:&quot;730&quot;,&quot;event_id&quot;:&quot;1227094688351679933&quot;}]</stringProp>
+                <stringProp name="48">0</stringProp>
+              </collectionProp>
+            </collectionProp>
+            <boolProp name="UserParameters.per_iteration">false</boolProp>
+          </UserParameters>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="参与对战接口" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">10</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="手机号登录" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="username" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${phone}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">username</stringProp>
+              </elementProp>
+              <elementProp name="password" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">qq111111</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">password</stringProp>
+              </elementProp>
+              <elementProp name="mobile_code" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">244</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">mobile_code</stringProp>
+              </elementProp>
+              <elementProp name="remember" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">1</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">remember</stringProp>
+              </elementProp>
+              <elementProp name="lang" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">zh-CN</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">lang</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">dev.zeroskins.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/sso/user/login</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 数据文件设置" enabled="true">
+            <stringProp name="filename">C:/Users/c5/Desktop/learning/JMeter/UUgamer/手机账号-zero登录.txt</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames">phone</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <stringProp name="delimiter"></stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">false</boolProp>
+            <boolProp name="stopThread">true</boolProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON提取器-token" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">auth_key</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.data.auth_key</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP信息头管理器" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+              </elementProp>
+            </collectionProp>
+            <stringProp name="TestPlan.comments">${__P(token,)}</stringProp>
+          </HeaderManager>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell 后置处理程序" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters">${auth_key}</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">${__setProperty(auth_key,${auth_key},)}</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="参与对战接口" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="game_id" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">1238586602483400704</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">game_id</stringProp>
+              </elementProp>
+              <elementProp name="password" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">password</stringProp>
+              </elementProp>
+              <elementProp name="lang" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">zh-CN</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">lang</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">dev.zeroskins.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/casesbattle/game/join</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">http://dev.zeroskins.com/api/casesbattle/game/join?lang=zh-CN</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP信息头管理器" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">X-Auth-Key</stringProp>
+                <stringProp name="Header.value">${__property(auth_key,,)}</stringProp>
+              </elementProp>
+            </collectionProp>
+            <stringProp name="TestPlan.comments">${__P(token,)}</stringProp>
+          </HeaderManager>
+          <hashTree/>
+          <SyncTimer guiclass="TestBeanGUI" testclass="SyncTimer" testname="同步定时器" enabled="true">
+            <intProp name="groupSize">10</intProp>
+            <longProp name="timeoutInMs">10000</longProp>
+          </SyncTimer>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="盲盒开箱" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">100</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">100</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="盲盒开箱" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="cases_id" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">884191379746025472</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">cases_id</stringProp>
+              </elementProp>
+              <elementProp name="amount" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">5</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">amount</stringProp>
+              </elementProp>
+              <elementProp name="user_secret" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">ceshis2</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">user_secret</stringProp>
+              </elementProp>
+              <elementProp name="lang" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">zh-CN</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">lang</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">dev.zeroskins.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/v2/cases/user-open</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">http://dev.zeroskins.com/api/v2/cases/user-open?lang=zh-CN</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP信息头管理器" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">X-Auth-Key</stringProp>
+                <stringProp name="Header.value">03f298077b8b5e6622fa2f3e8d8a836d78c60058</stringProp>
+              </elementProp>
+            </collectionProp>
+            <stringProp name="TestPlan.comments">${__P(token,)}</stringProp>
+          </HeaderManager>
+          <hashTree/>
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON断言" enabled="true">
+            <stringProp name="JSON_PATH">$.message</stringProp>
+            <stringProp name="EXPECTED_VALUE">OK</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+            <boolProp name="ISREGEX">true</boolProp>
+          </JSONPathAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="察看结果树" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="聚合报告" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

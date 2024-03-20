@@ -1,0 +1,26 @@
+{
+  "total" : 3,
+  "items" : [ {
+    "uid" : "34dce2907cbd3c3e47a90166fd9c7d9d",
+    "name" : "testb模块",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "ce1923650a059f07600229e844a2c263",
+    "name" : "testc模块",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

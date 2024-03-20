@@ -1,0 +1,148 @@
+{
+  "uid" : "2e7505d5ea6f1c4b",
+  "name" : "test_c",
+  "fullName" : "test_demo.Test_allure#test_c",
+  "historyId" : "38be2be0ddf9d4b0432399752ac2642e",
+  "time" : {
+    "start" : 1618459353525,
+    "stop" : 1618459353525,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login",
+    "time" : {
+      "start" : 1618459353524,
+      "stop" : 1618459353524,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "testc需要登录",
+      "time" : {
+        "start" : 1618459353525,
+        "stop" : 1618459353525,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "login",
+        "value" : "'lily'"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "871a7e0dcc3e1f5b",
+      "name" : "stdout",
+      "source" : "871a7e0dcc3e1f5b.txt",
+      "type" : "text/plain",
+      "size" : 25
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "testc模块"
+  }, {
+    "name" : "suite",
+    "value" : "test_demo"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_allure"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MRBN2E6"
+  }, {
+    "name" : "thread",
+    "value" : "17876-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_demo"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ {
+      "uid" : "b83753317639ff0f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1618459168103,
+        "stop" : 1618459168103,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "f0eac638b2df7269",
+      "status" : "passed",
+      "time" : {
+        "start" : 1618458828148,
+        "stop" : 1618458828149,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c25d97d95d2d4580",
+      "status" : "passed",
+      "time" : {
+        "start" : 1618458821914,
+        "stop" : 1618458821914,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "191fc541d877e75c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1618458685517,
+        "stop" : 1618458685518,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e02067ff6b40d69a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1618458569968,
+        "stop" : 1618458569968,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2e7505d5ea6f1c4b.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,25 @@
+| 任务                      |type      | 交互                        | 跳转地址                                                      
+| ---------------                     | ---------------         | ------------------------------------- |
+| 参与预测X场          1             | 跳转-赛事               | uugamer://uugamer.com/schedule_list       |
+| 预测正确X场                        | 跳转-赛事                | uugamer://uugamer.com/schedule_list   |
+| 预测赢得X豆                        | 跳转-赛事                | uugamer://uugamer.com/schedule_list   |
+| 预测投入X豆                        | 跳转-赛事                | uugamer://uugamer.com/schedule_list   |
+| 邀请X名好友      6          | 跳转-邀请好友页      | uugamer://uugamer.com/invited         |
+| 置换X件饰品                 | 跳转-Steam库存       | uugamer://uugamer.com/stock           |
+| 今日充值X元                        | 跳转-充值中心          | uugamer://uugamer.com/recharge        |
+| 累计充值X元           11         | 跳转-充值中心          | uugamer://uugamer.com/recharge        |
+| 完成预言X场                        | 跳转-预言                | uugamer://uugamer.com/dota_guess_self |
+| 预言正确X场                        | 跳转-预言               | uugamer://uugamer.com/dota_guess_self |
+| 预言赢得X豆                       | 跳转-预言                | uugamer://uugamer.com/dota_guess_self |
+开箱次数				             uugamer://uugamer.com/open_box					
+
+gu:lucky:user:open:986739756387794944:1014304631561097216:20220803
+
+
+15157910012
+
+icon-level-18
+完美  详情页14  首页 30
+[[{"duration":2911,"matchId":6642551369,"startTime":1666663158,"status":1,"steamId":76561198123433261}]]
+[[{"duration":2241,"matchId":6670228932,"startTime":1666662769,"status":0,"steamId":76561198123433261}]]
+[{"duration":3315,"matchId":6830174447,"startTime":1667051920,"status":1,"steamId":76561198123433261}]

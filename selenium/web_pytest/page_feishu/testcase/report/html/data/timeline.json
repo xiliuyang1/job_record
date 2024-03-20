@@ -1,0 +1,39 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-MRBN2E6",
+    "children" : [ {
+      "name" : "13816-MainThread",
+      "children" : [ {
+        "name" : "test_login",
+        "uid" : "b0f78c9974f983c5",
+        "parentUid" : "b23073345baeeb29f1617c4d17bd9eef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619061248088,
+          "stop" : 1619061259154,
+          "duration" : 11066
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_free",
+        "uid" : "57b8c599b6ef45d6",
+        "parentUid" : "b23073345baeeb29f1617c4d17bd9eef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619061274022,
+          "stop" : 1619061275211,
+          "duration" : 1189
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b23073345baeeb29f1617c4d17bd9eef"
+    } ],
+    "uid" : "a5ef1bd8f30889f8f024c8411d62217b"
+  } ]
+}

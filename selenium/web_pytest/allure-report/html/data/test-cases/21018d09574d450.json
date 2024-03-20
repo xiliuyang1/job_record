@@ -1,0 +1,103 @@
+{
+  "uid" : "21018d09574d450",
+  "name" : "test_a",
+  "fullName" : "test_demo.Test_allure#test_a",
+  "historyId" : "106fe07457dbaa98c448201ecb72a7f6",
+  "time" : {
+    "start" : 1618458685506,
+    "stop" : 1618458685507,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login",
+    "time" : {
+      "start" : 1618458685505,
+      "stop" : 1618458685505,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "需要登录",
+      "time" : {
+        "start" : 1618458685507,
+        "stop" : 1618458685507,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "login",
+        "value" : "'lily'"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "fb3fb20df162c6c7",
+      "name" : "stdout",
+      "source" : "fb3fb20df162c6c7.txt",
+      "type" : "text/plain",
+      "size" : 24
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "suite",
+    "value" : "test_demo"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_allure"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MRBN2E6"
+  }, {
+    "name" : "thread",
+    "value" : "15752-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_demo"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "21018d09574d450.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,62 @@
+{
+  "uid" : "b0f78c9974f983c5",
+  "name" : "test_login",
+  "fullName" : "test_case.Test_Index#test_login",
+  "historyId" : "bf7f6bf4044a67a8289b243b4d448a46",
+  "time" : {
+    "start" : 1619061248088,
+    "stop" : 1619061259154,
+    "duration" : 11066
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Index"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MRBN2E6"
+  }, {
+    "name" : "thread",
+    "value" : "13816-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "9a0a979089cd958a",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1619061186950,
+        "stop" : 1619061203026,
+        "duration" : 16076
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b0f78c9974f983c5.json",
+  "parameterValues" : [ ]
+}

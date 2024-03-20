@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="38px" viewBox="0 0 45 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 27</title>
+    <defs>
+        <path d="M45,0 L45,38 L19,38 C13.7532949,38 9.00329488,35.8733526 5.56497116,32.4350288 C2.12664744,28.9967051 0,24.2467051 0,19 C0,13.7532949 2.12664744,9.00329488 5.56497116,5.56497116 C9.00329488,2.12664744 13.7532949,0 19,0 L45,0 Z" id="path-1"></path>
+    </defs>
+    <g id="v1.5.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="自动发货页面_未开通" transform="translate(-961.000000, -90.000000)">
+            <g id="编组-5" transform="translate(960.000000, 89.000000)">
+                <g id="编组-27" transform="translate(1.000000, 1.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="矩形"></g>
+                    <rect id="矩形" fill="#FD802C" mask="url(#mask-2)" transform="translate(18.000000, 13.500000) rotate(-45.000000) translate(-18.000000, -13.500000) " x="-17" y="5" width="70" height="17"></rect>
+                    <text id="限时" mask="url(#mask-2)" transform="translate(17.292893, 12.792893) rotate(-45.000000) translate(-17.292893, -12.792893) " font-family="PingFangSC-Medium, PingFang SC" font-size="12" font-weight="400" fill="#FFFFFF">
+                        <tspan x="5.29289322" y="18.2928932">限时</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

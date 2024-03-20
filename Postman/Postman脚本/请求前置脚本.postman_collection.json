@@ -1,0 +1,27 @@
+{
+	"info": {
+		"_postman_id": "2a640661-17c7-4a61-a2c9-b5d3e8bb9586",
+		"name": "请求前置脚本",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "注册的获取验证码",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "注册",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}

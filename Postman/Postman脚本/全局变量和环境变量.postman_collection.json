@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "15f1ef61-a9d6-4eab-bd81-2de38dc22eab",
+		"name": "全局变量和环境变量",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "后台的获取验证码",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/index.php?m=Admin&c=Admin&a=vertify&r=15",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "m",
+							"value": "Admin"
+						},
+						{
+							"key": "c",
+							"value": "Admin"
+						},
+						{
+							"key": "a",
+							"value": "vertify"
+						},
+						{
+							"key": "r",
+							"value": "15"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "后台登陆",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "text"
+						},
+						{
+							"key": "vertify",
+							"value": "{{vertify}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/index.php?m=Admin&c=Admin&a=login&t=0.9373877423418666",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "m",
+							"value": "Admin"
+						},
+						{
+							"key": "c",
+							"value": "Admin"
+						},
+						{
+							"key": "a",
+							"value": "login"
+						},
+						{
+							"key": "t",
+							"value": "0.9373877423418666"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

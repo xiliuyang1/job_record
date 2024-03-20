@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>切片</title>
+    <defs>
+        <filter color-interpolation-filters="auto" id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.125490 0 0 0 0 0.047059 0 0 0 0 0.247059 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="v1.5.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="云端发货免费CDK活动" transform="translate(-310.000000, -155.000000)">
+            <g id="编组-9备份" transform="translate(290.000000, 64.000000)">
+                <g id="问号" transform="translate(20.000000, 89.000000)" filter="url(#filter-1)">
+                    <g transform="translate(0.000000, 2.000000)">
+                        <path d="M8,0 C12.418278,0 16,3.581722 16,8 C16,12.418278 12.418278,16 8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 Z M8,1.06666667 C6.08541287,1.06666667 4.35207953,1.84270643 3.09739298,3.09739298 C1.84270643,4.35207953 1.06666667,6.08541287 1.06666667,8 C1.06666667,9.91458713 1.84270643,11.6479205 3.09739298,12.902607 C4.35207953,14.1572936 6.08541287,14.9333333 8,14.9333333 C9.91458713,14.9333333 11.6479205,14.1572936 12.902607,12.902607 C14.1572936,11.6479205 14.9333333,9.91458713 14.9333333,8 C14.9333333,6.08541287 14.1572936,4.35207953 12.902607,3.09739298 C11.6479205,1.84270643 9.91458713,1.06666667 8,1.06666667 Z" id="形状结合" fill="#3D3D3D" fill-rule="nonzero"></path>
+                        <rect id="矩形" fill="#3D3D3D" x="7.46666667" y="3.2" width="1.06666667" height="7.2" rx="0.533333333"></rect>
+                        <circle id="椭圆形" fill="#3D3D3D" cx="8" cy="12" r="1"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

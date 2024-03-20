@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>更多</title>
+    <defs>
+        <filter color-interpolation-filters="auto" id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.207843 0 0 0 0 0.133333 0 0 0 0 0.317647 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="steam账号管理" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="编组" transform="translate(-1188.000000, -22.000000)" filter="url(#filter-1)">
+            <g transform="translate(1188.000000, 22.000000)" id="更多">
+                <rect id="矩形" x="0" y="0" width="16" height="16" rx="1.25"></rect>
+                <path d="M13.9,11.9 C14.5075132,11.9 15,12.3924868 15,13 C15,13.6075132 14.5075132,14.1 13.9,14.1 L2.1,14.1 C1.49248678,14.1 1,13.6075132 1,13 C1,12.3924868 1.49248678,11.9 2.1,11.9 L13.9,11.9 Z M13.9,6.9 C14.5075132,6.9 15,7.39248678 15,8 C15,8.60751322 14.5075132,9.1 13.9,9.1 L2.1,9.1 C1.49248678,9.1 1,8.60751322 1,8 C1,7.39248678 1.49248678,6.9 2.1,6.9 L13.9,6.9 Z M13.9,1.9 C14.5075132,1.9 15,2.39248678 15,3 C15,3.60751322 14.5075132,4.1 13.9,4.1 L2.1,4.1 C1.49248678,4.1 1,3.60751322 1,3 C1,2.39248678 1.49248678,1.9 2.1,1.9 L13.9,1.9 Z" id="形状结合" fill="#352251"></path>
+            </g>
+        </g>
+    </g>
+</svg>

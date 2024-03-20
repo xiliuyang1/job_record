@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "d5bad5d8-f344-4b94-bb2f-6cb34e3eb28b",
+		"name": "test_添加用例集",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "用户体系",
+			"item": [
+				{
+					"name": "登陆",
+					"item": [
+						{
+							"name": "登陆成功",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "手机号码未注册登陆失败",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "手机号码为空登陆失败",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "注册",
+					"item": [
+						{
+							"name": "注册成功",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "手机号码注册成功",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "邮箱注册成功",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "查看用户列表",
+					"item": []
+				}
+			]
+		},
+		{
+			"name": "权限管理",
+			"item": []
+		},
+		{
+			"name": "课程管理",
+			"item": []
+		},
+		{
+			"name": "注册登陆业务场景测试",
+			"item": [
+				{
+					"name": "注册",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "登陆",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

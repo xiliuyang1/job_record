@@ -1,0 +1,52 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-MRBN2E6",
+    "children" : [ {
+      "name" : "17876-MainThread",
+      "children" : [ {
+        "name" : "test_b",
+        "uid" : "ed5cc68507363a05",
+        "parentUid" : "ad195c31633e82936a9af81e59f0771d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1618459353521,
+          "stop" : 1618459353521,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_a",
+        "uid" : "1d8ea20ce7470e04",
+        "parentUid" : "ad195c31633e82936a9af81e59f0771d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1618459353516,
+          "stop" : 1618459353516,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_c",
+        "uid" : "2e7505d5ea6f1c4b",
+        "parentUid" : "ad195c31633e82936a9af81e59f0771d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1618459353525,
+          "stop" : 1618459353525,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ad195c31633e82936a9af81e59f0771d"
+    } ],
+    "uid" : "a5ef1bd8f30889f8f024c8411d62217b"
+  } ]
+}

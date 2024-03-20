@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="6px" viewBox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>三角形</title>
+    <g id="steam账号管理" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon" transform="translate(-160.000000, -42.000000)" fill="#352251">
+            <polygon id="三角形" transform="translate(165.000000, 45.000000) scale(1, -1) translate(-165.000000, -45.000000) " points="165 42 170 48 160 48"></polygon>
+        </g>
+    </g>
+</svg>

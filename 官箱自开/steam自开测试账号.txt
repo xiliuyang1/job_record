@@ -1,0 +1,14 @@
+closmeruhundchisoree:DCucUxGEVw
+
+{"shared_secret":"dNS4meb/ewCWdkpLpcIG6H+3WiM=","serial_number":"17789194257320874049","revocation_code":"R78966","uri":"otpauth://totp/Steam:closmeruhundchisoree?secret=OTKLRGPG755QBFTWJJF2LQQG5B73OWRD&issuer=Steam","server_time":"1678072703","account_name":"closmeruhundchisoree","token_gid":"2dc6228305d5ccd2","identity_secret":"Kxselv4sv0wk8utlOJZjnxoS85E=","secret_1":"n7kOdpB2iLpC0x6v1qMQt9ed2uM=","status":1,"phone_number_hint":"0329","device_id":"android:f0219136-836f-b306-63e1-dc017d44fcf1","phone_num":"6283861100329","Session":{"SteamID":"76561199417887661"}}
+
+
+15088888888
+15099999999
+
+
+18838032797  积分版自开订单
+
+isyi_96520
+sajdXT2tZc  变革43
+{"shared_secret":"I1bGRji8OVVtOGFLc9dfOCbdVHg=","serial_number":"-2693402895206786692","revocation_code":"R02484","uri":"otpauth://totp/Steam:isyi96520?secret=ENLMMRRYXQ4VK3JYMFFXHV27HATN2VDY&issuer=Steam","server_time":"1681502347","account_name":"isyi_96520","token_gid":"4d42261e12fc7e1a","identity_secret":"0Qs6co/8B5nAEWS1O4Ul4InAWtk=","secret_1":"0Qs6co/8B5nAEWS1O4Ul4InAWtk=","status":1,"phone_number_hint":"3197","device_id":"98bb1acd-e6ed-b0a0-b393-f37a20ffdfc4","fully_enrolled":true,"Session":{"SteamLoginSecure":"steamLoginSecure=76561199492709238%7C%7CeyAidHlwIjogIkpXVCIsICJhbGciOiAiRWREU0EiIH0.eyAiaXNzIjogInI6MTNGRV8yMjYxRTE1Q19FQjc4MCIsICJzdWIiOiAiNzY1NjExOTk0OTI3MDkyMzgiLCAiYXVkIjogWyAid2ViIiwgIm1vYmlsZSIgXSwgImV4cCI6IDE2ODE1OTAwMDYsICJuYmYiOiAxNjcyODYyMzIyLCAiaWF0IjogMTY4MTUwMjMyMiwgImp0aSI6ICIwRDI2XzIyNjFFMTVEX0Y1MDMxIiwgIm9hdCI6IDE2ODE1MDIzMjIsICJydF9leHAiOiAxNjk5OTE1ODgyLCAicGVyIjogMCwgImlwX3N1YmplY3QiOiAiMjEwLjE4MC43NS40MiIsICJpcF9jb25maXJtZXIiOiAiMjEwLjE4MC43NS40MiIgfQ.TPOyXoRGWgqxkioQLy7vc0GxnNSvZtfkaHMP_IkSExTmflYHFgA4WuCRGVRY_pAmllrYM7g8a39af9SUSoB8Dg","SteamID":"76561199492709238"}}

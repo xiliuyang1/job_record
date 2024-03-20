@@ -1,0 +1,6 @@
+/api/guess/user/guessHistoryItem?
+/api/steam/seller/order?  当首次进入出售记录时，响应时间2s以上
+
+/api/guess/forecast/index?
+/api/guess/forecast/list?
+/api/guess/forecast/checkOpen?  700ms~1s

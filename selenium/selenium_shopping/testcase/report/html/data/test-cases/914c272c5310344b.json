@@ -1,0 +1,65 @@
+{
+  "uid" : "914c272c5310344b",
+  "name" : "test_login[18888888888-12345-8888-False]",
+  "fullName" : "test_case.Test_index#test_login",
+  "historyId" : "0c6b983581ad409f1dc619a03647c73a",
+  "time" : {
+    "start" : 1619063184561,
+    "stop" : 1619063187957,
+    "duration" : 3396
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_index"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MRBN2E6"
+  }, {
+    "name" : "thread",
+    "value" : "22552-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "phone",
+    "value" : "'18888888888'"
+  }, {
+    "name" : "pwd",
+    "value" : "'12345'"
+  }, {
+    "name" : "status",
+    "value" : "'False'"
+  }, {
+    "name" : "ver",
+    "value" : "'8888'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "914c272c5310344b.json",
+  "parameterValues" : [ "'18888888888'", "'12345'", "'False'", "'8888'" ]
+}

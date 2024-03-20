@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "33040e19-c3fa-4386-b5be-456a2fd399c1",
+		"name": "拉勾商城登陆接口数据驱动测试",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "获取验证码",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/index.php?m=Home&c=User&a=verify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "m",
+							"value": "Home"
+						},
+						{
+							"key": "c",
+							"value": "User"
+						},
+						{
+							"key": "a",
+							"value": "verify"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "登陆",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// 断言响应状态码是不是200\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(data.status_code);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "text"
+						},
+						{
+							"key": "verify_code",
+							"value": "{{verify_code}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/index.php?m=Home&c=User&a=do_login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "m",
+							"value": "Home"
+						},
+						{
+							"key": "c",
+							"value": "User"
+						},
+						{
+							"key": "a",
+							"value": "do_login"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

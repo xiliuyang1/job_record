@@ -1,0 +1,5 @@
+test_search:
+  test_search_001:
+    keyword: "电视"
+  test_search_002:
+    keyword: "小米"
