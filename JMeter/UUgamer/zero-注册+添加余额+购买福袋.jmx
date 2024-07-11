@@ -448,7 +448,8 @@
             <boolProp name="resetInterpreter">false</boolProp>
             <stringProp name="parameters">${auth_key}</stringProp>
             <stringProp name="filename"></stringProp>
-            <stringProp name="script">${__setProperty(auth_key,${auth_key},)}</stringProp>
+            <stringProp name="script">${__setProperty(auth_key,${auth_key},)}
+</stringProp>
           </BeanShellPostProcessor>
           <hashTree/>
         </hashTree>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="158698cd-6e66-4534-b30d-4746f31a9a1c" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/requests/test_lagou_edu_project" beforeDir="false" afterPath="$PROJECT_DIR$/requests/test_lagou_edu_project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests/test_lagou_edu_project/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests/test_lagou_edu_project/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests/test_lagou_edu_project/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests/test_lagou_edu_project/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests/test_lagou_edu_project/.idea/test_lagou_edu_project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests/test_lagou_edu_project/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests/test_lagou_edu_project/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/requests/test_lagou_edu_project/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests/test_lagou_edu_project/data/login_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/requests/test_lagou_edu_project/data/login_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests/test_lagou_edu_project/logs/lagou.log" beforeDir="false" afterPath="$PROJECT_DIR$/requests/test_lagou_edu_project/logs/lagou.log" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2etPA9tgJhvarLqsiEN0IT55MXJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "run.code.analysis.last.selected.profile": "pProject Default"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="158698cd-6e66-4534-b30d-4746f31a9a1c" name="变更" comment="" />
+      <created>1712720755787</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712720755787</updated>
+    </task>
+    <servers />
+  </component>
+</project>
